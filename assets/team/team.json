@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Shufang Sun",
+        "affiliation": "Brown University",
+        "position": "Principal Investigator",
+        "url": "https://vivo.brown.edu/display/ssun33",
+        "image": "/assets/team/shufang.webp"
+    },
+    {
+        "name": "Simon Goldberg",
+        "affiliation": "University of Wisconsin-Madison",
+        "position": "Principal Investigator",
+        "url": "https://counselingpsych.education.wisc.edu/fac-staff/goldberg-simon/",
+        "image": "/assets/team/simon.webp"
+    },
+    {
+        "name": "Eric Loucks",
+        "affiliation": "Brown University",
+        "position": "Principal Investigator",
+        "url": "https://vivo.brown.edu/display/eloucks",
+        "image": "/assets/team/eric.webp"
+    },
+    {
+        "name": "Pim Cuijpers",
+        "affiliation": "Vrije Universiteit Amsterdam",
+        "position": "Consultant",
+        "url": "https://www.pimcuijpers.com/blog/",
+        "image": "/assets/team/pim.webp"
+    },
+    {
+        "name": "Eirini Karyotaki",
+        "affiliation": "Universiteit van Amsterdam",
+        "position": "Consultant",
+        "url": "https://www.uva.nl/en/profile/k/a/e.karyotaki/e.karyotaki.html",
+        "image": "/assets/team/eirini.webp"
+    },
+    {
+        "name": "Clara Miguel Sanz",
+        "affiliation": "Vrije Universiteit Amsterdam",
+        "position": "Consultant",
+        "url": "https://research.vu.nl/en/persons/clara-miguel-sanz-2",
+        "image": "/assets/team/clara.png"
+    },
+    {
+        "name": "Mathias Harrer",
+        "affiliation": "Vrije Universiteit Amsterdam",
+        "position": "Consultant",
+        "url": "https://mharrer.dev",
+        "image": "/assets/team/harrer.png"
+    },
+    {
+        "name": "Annemieke van Straten",
+        "affiliation": "Vrije Universiteit Amsterdam",
+        "position": "Consultant",
+        "url": "https://research.vu.nl/en/persons/annemieke-van-straten",
+        "image": "/assets/team/annemieke.webp"
+    },
+    {
+        "name": "Paula Kuper",
+        "affiliation": "Otto von Guericke University Magdeburg",
+        "position": "Consultant",
+        "url": "https://ismg.med.ovgu.de/en/Institute/Team/Kuper",
+        "image": "/assets/team/paula.webp"
+    },
+    {
+        "name": "Nikole Giovannone",
+        "affiliation": "Brown University",
+        "position": "Project Manager",
+        "url": "https://sites.brown.edu/mheal/team/#nikole ",
+        "image": "/assets/team/nikole.webp"
+    },
+    {
+        "name": "Vedhalakshmi Rajasankar",
+        "affiliation": "Brown University",
+        "position": "Research Assistant",
+        "url": "https://sites.brown.edu/mheal/team/#vedha",
+        "image": "/assets/team/vedha.webp"
+    },
+    {
+        "name": "Chloe Chen",
+        "affiliation": "Brown University",
+        "position": "Research Assistant",
+        "url": "https://sites.brown.edu/mheal/team/#chloe",
+        "image": "/assets/team/chloe.webp"
+    },
+    {
+        "name": "Wendy Lau",
+        "affiliation": "University of Wisconsin-Madison",
+        "position": "Research Assistant",
+        "url": "https://www.centerhealthyminds.org/about/people/wendy-lau",
+        "image": "/assets/team/wendy.webp"
+    },
+    {
+        "name": "Caroline Swords",
+        "affiliation": "University of Wisconsin-Madison",
+        "position": "Research Assistant",
+        "url": "https://centerhealthyminds.org/about/people/caroline-swords",
+        "image": "/assets/team/caroline.webp"
+    },
+    {
+        "name": "Qiang Xie",
+        "affiliation": "University of Wisconsin-Madison",
+        "position": "Research Assistant",
+        "url": "https://centerhealthyminds.org/about/people/qiang-xie",
+        "image": "/assets/team/qiang.webp"
+    }
+]
