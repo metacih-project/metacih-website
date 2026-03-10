@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Metapsy API | MetaCIH Collaborative Network</title>
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Code chunks CSS -->
+    <link href="css/codechunks.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Orbitron&family=Signika:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Cookie alert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css" />
+    <!-- fontawesome icons-->
+    <script src="https://kit.fontawesome.com/51da9bb012.js" crossorigin="anonymous"></script>
+    <!-- navbar footer script -->
+    <script src="/js/renderNavFooter.min.js" defer></script>
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="css/dracula.min.css" />
+</head>
+
+<body class="d-flex flex-column h-100 bg-boreal">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-boreal shadow"
+            style="position: relative; border-bottom: 0.5px solid var(--dgps-boreal-dark);">
+            <div id="navbar-inner" class="row w-100 align-items-center">
+            </div>
+        </nav>
+        <!-- Header-->
+        <header id="header-api" class="py-5 bg-white" style="z-index: 1;">
+            <div class="container px-5">
+                <div class="row align-items-top justify-content-center" style="margin-bottom: 50px;">
+                    <div class="col-lg-6">
+                        <div class="justify-content-center" style="margin-top: 50px">
+                            <h1 class="boreal signika mb-4">
+                                The Metapsy API
+                            </h1>
+                            <div class="lead fw-normal mb-4">
+                                <p>
+                                    It is possible to access the MetaCIH databases via a
+                                    simple Application Programming Interface (API), which is maintained by <a href="https://www.metapsy.org/">Metapsy</a>.
+                                </p>
+                                <p>
+                                    Two GET requests are defined. The <code class="sand">list_data</code> request
+                                    allows to retrieve a summary of all available databases.
+                                    The <code class="sand">get_data</code> request retrieves raw data and metadata of a
+                                    specific database (current or in the past).
+                                </p>
+                                <p>
+                                    All response bodies are JSON encoded. No authentication is required to use the API.
+                                    The API has a rate limit, and we kindly ask users to restrict requests
+                                    to once per minute, if possible.
+                                </p>
+                            </div>
+                            <a class="btn btn-primary btn-lg no-underline" style="margin-top: 10px"
+                                href="#api-docs">Documentation <img class="fa-chevron-down mb-1" src="/assets/icons/down-arrow.svg" alt="" height="22px"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 hide-mobile" style="margin: 100px; margin-top: 0px;">
+                        <div id="spinner" style="margin-top: -150px !important; z-index: 1;"></div>
+                        <img id="spinner-img-2" src="assets/logos/api-logo.png" alt="logo" height="100px" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="py-5 bg-sand-fade" id="api-docs" style="border-top: 0.5px solid var(--dgps-boreal);">
+            <div class="container px-5 my-5" style="margin: auto; max-width: 1000px">
+                <div class="row align-items-top justify-content-center" style="margin-top: -50px">
+                    <div class="col-lg-9">
+                        <h2 class="signika boreal" style="margin-top: 10px">
+                            Documentation
+                        </h2>
+                    </div>
+                    <div class="col-lg-3">
+                        <a class="btn btn-primary btn-lg no-underline" style="margin-top: 10px; z-index: 99999; position: absolute;"
+                            href="https://app.swaggerhub.com/apis-docs/t38169/metapsy/1.0.0" target="_blank">View Live
+                            Demo &#8599;</a>
+                    </div>
+                </div>
+            </div>
+            <div id="api-docs-content" class="container px-5 my-5">
+                <div class="add-shadow" style="
+              margin: auto;
+              max-width: 1000px;
+              padding: 10px;
+              border-radius: 0px;
+              background-color: white;
+              border: 0.5px solid var(--dgps-boreal);
+            ">
+                    <iframe src="/html/api-docs.html" frameborder="0" seamless="seamless" style="
+                overflow: hidden;
+                height: 1700px;
+                width: 100%;
+                border-style: none;
+                padding: 0;
+                border: 0;
+              "></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Disclaimer -->
+    <section class="bg-white disclaimer disclaimer-db \*slide-in*\" style="border-top: 0.5px solid var(--dgps-boreal);">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-left justify-content-left text-muted" style="
+              font-size: 13px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-left: 28px;
+            ">
+                This website is intended for healthcare professionals.
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer id="footer" class="bg-boreal py-5 mt-auto footer-db">
+    </footer>
+    <!-- Bootstrap-Cookie-Alert -->
+    <div class="alert text-center cookiealert" role="alert">
+        <i class="fa-solid fa-cookie-bite"></i>&nbsp; We use <b>cookies</b> to ensure you get the best experience on our
+        website.
+        <a href="/privacy.html" target="_blank">Learn more</a>
+        <button type="button" class="btn btn-primary btn-sm acceptcookies">
+            I agree
+        </button>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="/js/scripts.js"></script>
+    <!-- Metapsy JS-->
+    <script src="/js/metapsy.min.js"></script>
+    <!-- Cookie alert-->
+    <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js" defer></script>
+</body>
+
+</html>
